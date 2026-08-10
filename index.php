@@ -3,8 +3,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Study Orbit Guide | Scholarly Textiles & Library Loom Weaving</title>
-    <meta name="description" content="An independent academic study textile archive documenting hand-woven book covers, organic plant dyes, and wool desk mat loft.">
+    <title>Study Orbit Library | Scholarly Manuscripts & Book Archives</title>
+    <meta name="description" content="A prestigious research library and manuscript archive documenting hand-woven book jackets, organic paper preservation, and reading desk ergonomics.">
     <link rel="stylesheet" href="assets/style.css">
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-0LY0HY7L01"></script>
@@ -19,7 +19,7 @@
 <body>
     <header class="topbar">
         <a class="brand" href="index.php">
-            Study Orbit <span>Guide</span>
+            Study Orbit <span>Library</span>
         </a>
         <button class="menu" aria-label="Open menu" aria-expanded="false">☰</button>
         <nav>
@@ -36,24 +36,24 @@
             <div class="hero-stats">
                 <div class="hero-stat-box">
                     <div class="hero-stat-val">Est. 2026</div>
-                    <div class="hero-stat-lbl">Archive Established</div>
+                    <div class="hero-stat-lbl">Library Established</div>
                 </div>
                 <div class="hero-stat-box">
                     <div class="hero-stat-val">12 Volumes</div>
-                    <div class="hero-stat-lbl">Documented Logs</div>
+                    <div class="hero-stat-lbl">Manuscript Logs</div>
                 </div>
                 <div class="hero-stat-box">
                     <div class="hero-stat-val">181 Mercer</div>
-                    <div class="hero-stat-lbl">Studio Head Office</div>
+                    <div class="hero-stat-lbl">Library Head Office</div>
                 </div>
             </div>
             <div class="hero-image-frame">
                 <img src="assets/img/hero.jpg" alt="Aesthetic high-angle library bookshelves featuring classic scholarly collections">
             </div>
             <div class="hero-content">
-                <p class="eyebrow">[ SCHOLARLY TEXTILES // STAGE.00 ]</p>
-                <h1>Weaving high-strength canvas & felt for <span>the active scholar</span>.</h1>
-                <p class="description">We publish studies, bookbag thread counts, plant dye formulas, and desk setup safety ergonomics charts to support sustainable academic designers.</p>
+                <p class="eyebrow">[ SCHOLARLY MANUSCRIPTS // STAGE.00 ]</p>
+                <h1>Preserving ancient linen scrolls & bindings for <span>the modern scholar</span>.</h1>
+                <p class="description">We catalog historical documents, cotton bookbag thread counts, vegetable dye formulas, and library workspace ergonomics charts to support preservationists.</p>
                 <div class="hero-actions">
                     <a class="cta-btn" href="blog.html">Read Loom Logs</a>
                     <a class="sec-btn" href="about.html">Explore Craft</a>
@@ -64,12 +64,12 @@
         <!-- TEXT SECTION: Immediately after Hero (Rule Compliance) -->
         <section style="margin-bottom: 80px; padding: 60px 40px; background: var(--bg-panel); border: var(--border); border-radius: 4px; text-align: center;">
             <p class="eyebrow" style="color: var(--brass); font-family: var(--font-mono); font-size: 10px; margin-bottom: 20px;">[ THE STUDY GUIDE MANIFESTO // STAGE.00 ]</p>
-            <h2 style="font-family: 'Playfair Display', serif; font-size: 30px; color: var(--white); margin-bottom: 25px; font-weight: 700;">The Philosophy of Academic Weaving</h2>
+            <h2 style="font-family: 'Playfair Display', serif; font-size: 30px; color: var(--white); margin-bottom: 25px; font-weight: 700;">The Philosophy of Library Preservation</h2>
             <p style="color: var(--text-muted); font-size: 15px; line-height: 1.8; max-width: 760px; margin: 0 auto 20px;">
-                We believe that the workspace is a sacred sanctuary. By weaving heavy cotton canvas, plant-extracted indigo dyes, and insulating wool felt layers, we construct bookbags and desk mats that protect during long study hours.
+                We believe that historical texts are sacred treasures. By documenting organic cotton covers, plant-extracted indigo dyes, and insulating wool felt desk backings, we construct preservation systems that protect manuscripts during research.
             </p>
             <p style="color: var(--text-muted); font-size: 15px; line-height: 1.8; max-width: 760px; margin: 0 auto;">
-                Our studio rejects synthetic polyester book covers. We focus on zero-waste fiber loops, heavy-duty double welt borders, and natural plant dye vats to maintain academic aesthetic integrity.
+                Our studio rejects synthetic polyester book binders. We focus on zero-waste fiber loops, heavy-duty double welt borders, and natural plant dye vats to maintain library aesthetic integrity.
             </p>
         </section>
 
@@ -113,12 +113,12 @@
             <div class="dial-card">
                 <div class="dial-value">160 threads</div>
                 <div class="dial-label">Weave Thread Count</div>
-                <div class="dial-desc">Ideal thread count for heavy cotton canvas durability.</div>
+                <div class="dial-desc">Ideal thread count for heavy cotton canvas bookbag durability.</div>
             </div>
             <div class="dial-card">
                 <div class="dial-value">280 gsm</div>
-                <div class="dial-label">Bookbag Fabric Weight</div>
-                <div class="dial-desc">Heavyweight protection that drapes comfortably.</div>
+                <div class="dial-label">Book Cover Weight</div>
+                <div class="dial-desc">Heavyweight linen cover protection that drapes naturally.</div>
             </div>
             <div class="dial-card">
                 <div class="dial-value">10.8 pH</div>
@@ -260,7 +260,7 @@
     <footer>
         <div class="footer-grid">
             <div class="footer-brand">
-                <h3>Study Orbit Guide</h3>
+                <h3>Study Orbit Library</h3>
                 <p>Independent research and logs for artisan study textiles, organic plant dye chemistry, and academic space ergonomics.</p>
             </div>
             <div class="footer-col">
@@ -287,7 +287,7 @@
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2026 Study Orbit Guide. Independent scholarly study textile archive, not a retail shop.</p>
+            <p>&copy; 2026 Study Orbit Library. Independent scholarly study textile archive, not a retail shop.</p>
         </div>
     </footer>
 
