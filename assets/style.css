@@ -1,16 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;700&display=swap');
 
 :root {
-    --bg: #0B0F19;
-    --bg-panel: #13192B;
-    --bg-dark: #060910;
-    --brass: #CBA358;
-    --parchment: #E8DFD8;
+    --bg: #0A0D14;
+    --bg-panel: #111622;
+    --bg-dark: #05070A;
+    --gold: #D4AF37;
+    --parchment: #E2D9C8;
     --white: #FFFFFF;
-    --text: #F5F3F0;
-    --text-muted: #9BA4B5;
-    --border: 1px solid rgba(203, 163, 88, 0.15);
-    --border-strong: 1px solid #CBA358;
+    --text: #F0EFEA;
+    --text-muted: #8E9BAE;
+    --border: 1px dashed rgba(212, 175, 55, 0.2);
+    --border-strong: 1px solid #D4AF37;
     --font-mono: 'JetBrains Mono', monospace;
     --max-width: 1200px;
 }
@@ -34,16 +34,17 @@ body {
     overflow-x: hidden;
 }
 
-/* Scholarly paper texture watermark */
+/* Blueprint grids overlay */
 body::before {
     content: '';
     position: fixed;
     inset: 0;
     pointer-events: none;
-    opacity: 0.015;
+    opacity: 0.02;
     background-image: 
-        radial-gradient(var(--brass) 1px, transparent 1px);
-    background-size: 30px 30px;
+        linear-gradient(rgba(212, 175, 55, 0.15) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(212, 175, 55, 0.15) 1px, transparent 1px);
+    background-size: 40px 40px;
     z-index: 1000;
 }
 
@@ -82,7 +83,7 @@ img {
 }
 
 .brand span {
-    color: var(--brass);
+    color: var(--gold);
     font-weight: 400;
     font-style: italic;
 }
@@ -106,7 +107,7 @@ img {
 .topbar nav a::after {
     content: '  /';
     margin-left: 15px;
-    color: rgba(203, 163, 88, 0.25);
+    color: rgba(212, 175, 55, 0.25);
 }
 
 .topbar nav a:last-child::after {
@@ -133,19 +134,19 @@ img {
     align-items: center;
     justify-content: center;
     background-color: transparent;
-    color: var(--brass);
+    color: var(--gold);
     padding: 8px 18px;
     font-family: var(--font-mono);
     font-size: 11px;
     font-weight: 700;
-    border: 1px solid var(--brass);
+    border: 1px solid var(--gold);
     border-radius: 3px;
     transition: all 0.3s ease;
     cursor: pointer;
 }
 
 .cta-btn:hover {
-    background-color: var(--brass);
+    background-color: var(--gold);
     color: var(--bg-dark);
 }
 
@@ -157,37 +158,75 @@ main {
     padding: 0 20px 80px;
 }
 
-/* Overlapping Split Hero Section */
+/* CUSTOM PROFESSIONAL LAYOUT: 3-Column Hero Section */
 .hero {
     display: grid;
-    grid-template-columns: 1.1fr 0.9fr;
-    gap: 60px;
+    grid-template-columns: 0.6fr 1fr 1.4fr;
+    gap: 40px;
     align-items: center;
     padding: 40px 0 80px;
     border-bottom: var(--border);
 }
 
+.hero-stats {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.hero-stat-box {
+    border-left: 2px solid var(--gold);
+    padding-left: 15px;
+}
+
+.hero-stat-val {
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    color: var(--gold);
+    font-weight: 700;
+}
+
+.hero-stat-lbl {
+    font-family: var(--font-mono);
+    font-size: 10px;
+    color: var(--text-muted);
+    text-transform: uppercase;
+}
+
+.hero-image-frame {
+    border: var(--border);
+    padding: 8px;
+    background: var(--bg-panel);
+    border-radius: 4px;
+    height: 520px;
+}
+
+.hero-image-frame img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 .hero-content {
     background: var(--bg-panel);
     border: var(--border);
-    padding: 60px;
+    padding: 50px;
     border-radius: 4px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
     position: relative;
-    z-index: 10;
 }
 
 .hero-content p.eyebrow {
     font-family: var(--font-mono);
     font-size: 10px;
-    color: var(--brass);
+    color: var(--gold);
     margin-bottom: 15px;
     letter-spacing: 0.15em;
 }
 
 .hero-content h1 {
     font-family: 'Playfair Display', serif;
-    font-size: clamp(32px, 4.5vw, 48px);
+    font-size: clamp(30px, 3.5vw, 42px);
     font-weight: 700;
     line-height: 1.25;
     color: var(--white);
@@ -195,13 +234,13 @@ main {
 }
 
 .hero-content h1 span {
-    color: var(--brass);
+    color: var(--gold);
     font-style: italic;
     font-weight: 400;
 }
 
 .hero-content p.description {
-    font-size: 15px;
+    font-size: 14px;
     color: var(--text-muted);
     margin-bottom: 30px;
 }
@@ -214,7 +253,7 @@ main {
 .hero-actions .sec-btn {
     display: inline-flex;
     align-items: center;
-    border: 1px solid rgba(203, 163, 88, 0.25);
+    border: 1px solid rgba(212, 175, 55, 0.25);
     color: var(--white);
     padding: 8px 18px;
     font-family: var(--font-mono);
@@ -224,22 +263,8 @@ main {
 }
 
 .hero-actions .sec-btn:hover {
-    border-color: var(--brass);
-    color: var(--brass);
-}
-
-.hero-image-frame {
-    border: var(--border);
-    padding: 8px;
-    background: var(--bg-panel);
-    border-radius: 4px;
-    height: 480px;
-}
-
-.hero-image-frame img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    border-color: var(--gold);
+    color: var(--gold);
 }
 
 /* Page Hero */
@@ -256,7 +281,7 @@ main {
 .pagehero p.eyebrow {
     font-family: var(--font-mono);
     font-size: 10px;
-    color: var(--brass);
+    color: var(--gold);
     margin-bottom: 12px;
 }
 
@@ -323,7 +348,7 @@ main {
 .section-header p.eyebrow {
     font-family: var(--font-mono);
     font-size: 10px;
-    color: var(--brass);
+    color: var(--gold);
     margin-bottom: 10px;
 }
 
@@ -333,7 +358,7 @@ main {
     color: var(--white);
 }
 
-/* AVONE DEMO 2: Lookbook Hotspots Container */
+/* CUSTOM PROFESSIONAL: Blueprint Lookbook */
 .lookbook-wrap {
     position: relative;
     border: var(--border);
@@ -360,7 +385,7 @@ main {
     width: 20px;
     height: 20px;
     border-radius: 50%;
-    background: var(--brass);
+    background: var(--gold);
     border: 3px solid var(--white);
     cursor: pointer;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -376,7 +401,7 @@ main {
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    border: 1px solid var(--brass);
+    border: 1px solid var(--gold);
     animation: pulse 2s infinite ease-out;
 }
 
@@ -411,7 +436,7 @@ main {
     transform: translateX(-50%);
     border-width: 8px;
     border-style: solid;
-    border-color: var(--brass) transparent transparent transparent;
+    border-color: var(--gold) transparent transparent transparent;
 }
 
 .hotspot.active .hotspot-tooltip {
@@ -438,7 +463,7 @@ main {
 .hotspot-tooltip a {
     font-family: var(--font-mono);
     font-size: 9px;
-    color: var(--brass);
+    color: var(--gold);
     font-weight: 700;
     text-transform: uppercase;
 }
@@ -463,7 +488,7 @@ main {
 .dial-value {
     font-family: 'Playfair Display', serif;
     font-size: 38px;
-    color: var(--brass);
+    color: var(--gold);
     font-weight: 700;
     margin-bottom: 10px;
 }
@@ -503,7 +528,7 @@ main {
     background: var(--bg-panel);
     font-family: var(--font-mono);
     font-size: 10px;
-    color: var(--brass);
+    color: var(--gold);
 }
 
 .metrics-table td {
@@ -541,8 +566,8 @@ main {
 
 .tab-btn.active,
 .tab-btn:hover {
-    color: var(--brass);
-    border-bottom-color: var(--brass);
+    color: var(--gold);
+    border-bottom-color: var(--gold);
 }
 
 /* Tab contents grid */
@@ -589,7 +614,7 @@ main {
 .tab-card span.meta {
     font-family: var(--font-mono);
     font-size: 9px;
-    color: var(--brass);
+    color: var(--gold);
     margin-bottom: 10px;
     display: block;
 }
@@ -610,7 +635,7 @@ main {
 .tab-card a {
     font-family: var(--font-mono);
     font-size: 11px;
-    color: var(--brass);
+    color: var(--gold);
 }
 
 /* Standard columns (About layouts) */
@@ -667,14 +692,14 @@ main {
 
 .contact-details-item {
     margin-bottom: 30px;
-    border-left: 2px solid var(--brass);
+    border-left: 2px solid var(--gold);
     padding-left: 18px;
 }
 
 .contact-details-item h4 {
     font-family: var(--font-mono);
     font-size: 10px;
-    color: var(--brass);
+    color: var(--gold);
     margin-bottom: 5px;
 }
 
@@ -711,13 +736,13 @@ main {
 
 .form-group input:focus,
 .form-group textarea:focus {
-    border-color: var(--brass);
+    border-color: var(--gold);
 }
 
 .submit-btn {
     background: transparent;
-    color: var(--brass);
-    border: 1px solid var(--brass);
+    color: var(--gold);
+    border: 1px solid var(--gold);
     padding: 12px 24px;
     font-family: var(--font-mono);
     font-weight: 700;
@@ -728,7 +753,7 @@ main {
 }
 
 .submit-btn:hover {
-    background: var(--brass);
+    background: var(--gold);
     color: var(--bg-dark);
 }
 
@@ -753,7 +778,7 @@ main {
 .article-header .back-link {
     font-family: var(--font-mono);
     font-size: 10px;
-    color: var(--brass);
+    color: var(--gold);
     display: inline-flex;
     align-items: center;
     gap: 6px;
@@ -771,7 +796,7 @@ main {
     font-size: 16px;
     line-height: 1.8;
     color: var(--text-muted);
-    border-left: 2px solid var(--brass);
+    border-left: 2px solid var(--gold);
     padding-left: 22px;
     margin-bottom: 40px;
     font-style: italic;
@@ -823,7 +848,7 @@ main {
     color: var(--text-muted);
 }
 
-/* Ink Footer */
+/* Blueprint Footer */
 footer {
     background-color: var(--bg-dark);
     border-top: var(--border);
@@ -856,7 +881,7 @@ footer {
 .footer-col h4 {
     font-family: var(--font-mono);
     font-size: 10px;
-    color: var(--brass);
+    color: var(--gold);
     margin-bottom: 20px;
 }
 
@@ -874,7 +899,7 @@ footer {
 }
 
 .footer-col a:hover {
-    color: var(--brass);
+    color: var(--gold);
 }
 
 .footer-bottom {

@@ -31,8 +31,25 @@
     </header>
 
     <main>
-        <!-- Hero Section (Compulsory immediately after Header) -->
+        <!-- CUSTOM 3-COLUMN HERO Section (Compulsory immediately after Header) -->
         <section class="hero">
+            <div class="hero-stats">
+                <div class="hero-stat-box">
+                    <div class="hero-stat-val">Est. 2026</div>
+                    <div class="hero-stat-lbl">Archive Established</div>
+                </div>
+                <div class="hero-stat-box">
+                    <div class="hero-stat-val">12 Volumes</div>
+                    <div class="hero-stat-lbl">Documented Logs</div>
+                </div>
+                <div class="hero-stat-box">
+                    <div class="hero-stat-val">181 Mercer</div>
+                    <div class="hero-stat-lbl">Studio Head Office</div>
+                </div>
+            </div>
+            <div class="hero-image-frame">
+                <img src="assets/img/hero.jpg" alt="Aesthetic high-angle library bookshelves featuring classic scholarly collections">
+            </div>
             <div class="hero-content">
                 <p class="eyebrow">[ SCHOLARLY TEXTILES // STAGE.00 ]</p>
                 <h1>Weaving high-strength canvas & felt for <span>the active scholar</span>.</h1>
@@ -41,9 +58,6 @@
                     <a class="cta-btn" href="blog.html">Read Loom Logs</a>
                     <a class="sec-btn" href="about.html">Explore Craft</a>
                 </div>
-            </div>
-            <div class="hero-image-frame">
-                <img src="assets/img/hero.jpg" alt="Aesthetic study table layout featuring hand-woven book wraps and brass desk settings">
             </div>
         </section>
 
@@ -59,7 +73,7 @@
             </p>
         </section>
 
-        <!-- IMAGE SECTION 1: AVONE DEMO 2 LOOKBOOK HOTSPOTS -->
+        <!-- IMAGE SECTION 1: BLUEPRINT LOOKBOOK HOTSPOTS -->
         <section class="lookbook-wrap">
             <img class="lookbook-img" src="assets/img/blog_bed.jpg" alt="Vintage bookshelf with academic textiles and hotspots">
             
